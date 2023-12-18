@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="App\app.cpp">
       <Filter>NextAPI</Filter>
@@ -20,6 +19,22 @@
     </ClCompile>
     <ClCompile Include="stb_image\stb_image.cpp">
       <Filter>stb_image</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>EonApi</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTest.cpp" />
+    <ClCompile Include="GameObject.cpp">
+      <Filter>EonApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>EonApi\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteRenderer.cpp">
+      <Filter>EonApi\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="TestController.cpp">
+      <Filter>EonApi\Scripts</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +63,21 @@
     <ClInclude Include="stb_image\stb_image.h">
       <Filter>stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>EonApi</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>EonApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>EonApi\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteRenderer.h">
+      <Filter>EonApi\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="TestController.h">
+      <Filter>EonApi\Scripts</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="NextAPI">
@@ -55,6 +85,15 @@
     </Filter>
     <Filter Include="stb_image">
       <UniqueIdentifier>{61cfc19b-c57e-4021-b530-bac172fcba86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EonApi">
+      <UniqueIdentifier>{b048f515-33a4-43e3-afdc-1c6998cbfdde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EonApi\Components">
+      <UniqueIdentifier>{ff1a45dd-1af2-4b0c-8485-f776c48fde4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EonApi\Scripts">
+      <UniqueIdentifier>{cb52f296-703c-4290-9436-a71a4cc0b8c2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

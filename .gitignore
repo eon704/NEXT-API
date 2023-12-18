@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/.vs/GameTest
+/GameTest/x64/Debug
+/x64/Debug
