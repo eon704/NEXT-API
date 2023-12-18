@@ -33,27 +33,6 @@ void Update(float deltaTime)
 {
 	testGameObject->Update(deltaTime);
 
-	/*if (App::GetController().CheckButton(XINPUT_GAMEPAD_DPAD_UP, false))
-	{
-		testSprite->SetScale(testSprite->GetScale() + 0.1f);
-	}
-	if (App::GetController().CheckButton(XINPUT_GAMEPAD_DPAD_DOWN, false))
-	{
-		testSprite->SetScale(testSprite->GetScale() - 0.1f);
-	}
-	if (App::GetController().CheckButton(XINPUT_GAMEPAD_DPAD_LEFT, false))
-	{
-		testSprite->SetAngle(testSprite->GetAngle() + 0.1f);
-	}
-	if (App::GetController().CheckButton(XINPUT_GAMEPAD_DPAD_RIGHT, false))
-	{
-		testSprite->SetAngle(testSprite->GetAngle() - 0.1f);
-	}
-	if (App::GetController().CheckButton(XINPUT_GAMEPAD_A, true))
-	{
-		testSprite->SetAnimation(-1);
-	}*/
-
 	//------------------------------------------------------------------------
 	// Sample Sound.
 	//------------------------------------------------------------------------
@@ -95,6 +74,7 @@ void Render()
 		App::DrawLine(sx, sy, ex, ey,r,g,b);
 	}
 }
+
 //------------------------------------------------------------------------
 // Add your shutdown code here. Called when the APP_QUIT_KEY is pressed.
 // Just before the app exits.
