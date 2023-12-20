@@ -14,5 +14,6 @@ public:
 	void Destroy();
 private:
 	std::vector<Component*> components;
+	std::vector<GameObject> children;
 };
 

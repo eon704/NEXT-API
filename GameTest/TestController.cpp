@@ -24,39 +24,32 @@ TestController::TestController()
 void TestController::Update(float deltaTime)
 {
 	GameObject::Update(deltaTime);
+	
+	float x, y;
+	this->spriteRenderer->sprite->GetPosition(x, y);
 
 	if (App::GetController().GetLeftThumbStickX() > 0.5f)
 	{
 		this->spriteRenderer->sprite->SetAnimation(ANIM_RIGHT);
-		float x, y;
-		this->spriteRenderer->sprite->GetPosition(x, y);
 		x += 1.0f;
-		this->spriteRenderer->sprite->SetPosition(x, y);
 	}
 	if (App::GetController().GetLeftThumbStickX() < -0.5f)
 	{
 		this->spriteRenderer->sprite->SetAnimation(ANIM_LEFT);
-		float x, y;
-		this->spriteRenderer->sprite->GetPosition(x, y);
 		x -= 1.0f;
-		this->spriteRenderer->sprite->SetPosition(x, y);
 	}
 	if (App::GetController().GetLeftThumbStickY() > 0.5f)
 	{
 		this->spriteRenderer->sprite->SetAnimation(ANIM_FORWARDS);
-		float x, y;
-		this->spriteRenderer->sprite->GetPosition(x, y);
 		y += 1.0f;
-		this->spriteRenderer->sprite->SetPosition(x, y);
 	}
 	if (App::GetController().GetLeftThumbStickY() < -0.5f)
 	{
 		this->spriteRenderer->sprite->SetAnimation(ANIM_BACKWARDS);
-		float x, y;
-		this->spriteRenderer->sprite->GetPosition(x, y);
 		y -= 1.0f;
-		this->spriteRenderer->sprite->SetPosition(x, y);
 	}
+
+	this->spriteRenderer->sprite->SetPosition(x, y);
 }
 
 void TestController::Destroy()

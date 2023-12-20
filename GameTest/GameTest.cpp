@@ -8,13 +8,16 @@
 //------------------------------------------------------------------------
 #include "app\app.h"
 #include "GameObject.h"
-#include "TestController.h"
 #include "Component.h"
 #include "SpriteRenderer.h"
+
+#include "TestController.h"
+#include "GameUI.h"
 
 
 //------------------------------------------------------------------------
 GameObject* testGameObject;
+GameObject* gameUI;
 //------------------------------------------------------------------------
 
 //------------------------------------------------------------------------
@@ -23,6 +26,7 @@ GameObject* testGameObject;
 void Init()
 {
 	testGameObject = new TestController();
+	gameUI = new GameUI();
 }
 
 //------------------------------------------------------------------------
@@ -49,10 +53,7 @@ void Update(float deltaTime)
 void Render()
 {	
 	testGameObject->Render();
-	//------------------------------------------------------------------------
-	// Example Text.
-	//------------------------------------------------------------------------
-	App::Print(100, 100, "Sample Text");
+	gameUI->Render();
 
 	//------------------------------------------------------------------------
 	// Example Line Drawing.

@@ -36,6 +36,12 @@
     <ClCompile Include="TestController.cpp">
       <Filter>EonApi\Scripts</Filter>
     </ClCompile>
+    <ClCompile Include="TextUI.cpp">
+      <Filter>EonApi\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>EonApi\Scripts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -76,6 +82,12 @@
       <Filter>EonApi\Components</Filter>
     </ClInclude>
     <ClInclude Include="TestController.h">
+      <Filter>EonApi\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="TextUI.h">
+      <Filter>EonApi\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
       <Filter>EonApi\Scripts</Filter>
     </ClInclude>
   </ItemGroup>
