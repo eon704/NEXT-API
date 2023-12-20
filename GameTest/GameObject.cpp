@@ -3,11 +3,6 @@
 
 GameObject::GameObject() {}
 
-GameObject::GameObject(std::vector<Component*> components)
-{
-	this->components = components;
-}
-
 void GameObject::Update(float deltaTime)
 {
 	for each (Component* component in this->components)
@@ -33,5 +28,6 @@ void GameObject::Destroy()
 	for each (Component * component in this->components)
 	{
 		component->Destroy();
+		delete component;
 	}
 }

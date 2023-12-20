@@ -11,13 +11,11 @@
 #include "Component.h"
 #include "SpriteRenderer.h"
 
-#include "TestController.h"
-#include "GameUI.h"
+#include "GameScene.h"
 
 
 //------------------------------------------------------------------------
-GameObject* testGameObject;
-GameObject* gameUI;
+GameScene* gameScene;
 //------------------------------------------------------------------------
 
 //------------------------------------------------------------------------
@@ -25,8 +23,7 @@ GameObject* gameUI;
 //------------------------------------------------------------------------
 void Init()
 {
-	testGameObject = new TestController();
-	gameUI = new GameUI();
+	gameScene = new GameScene();
 }
 
 //------------------------------------------------------------------------
@@ -35,7 +32,7 @@ void Init()
 //------------------------------------------------------------------------
 void Update(float deltaTime)
 {
-	testGameObject->Update(deltaTime);
+	gameScene->Update(deltaTime);
 
 	//------------------------------------------------------------------------
 	// Sample Sound.
@@ -52,8 +49,7 @@ void Update(float deltaTime)
 //------------------------------------------------------------------------
 void Render()
 {	
-	testGameObject->Render();
-	gameUI->Render();
+	gameScene->Render();
 
 	//------------------------------------------------------------------------
 	// Example Line Drawing.
@@ -82,6 +78,5 @@ void Render()
 //------------------------------------------------------------------------
 void Shutdown()
 {	
-	testGameObject->Destroy();
-	delete testGameObject;
+	gameScene->Destroy();
 }

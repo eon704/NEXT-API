@@ -42,6 +42,9 @@
     <ClCompile Include="GameUI.cpp">
       <Filter>EonApi\Scripts</Filter>
     </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>EonApi\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -90,6 +93,9 @@
     <ClInclude Include="GameUI.h">
       <Filter>EonApi\Scripts</Filter>
     </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>EonApi\Scenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="NextAPI">
@@ -106,6 +112,9 @@
     </Filter>
     <Filter Include="EonApi\Scripts">
       <UniqueIdentifier>{cb52f296-703c-4290-9436-a71a4cc0b8c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EonApi\Scenes">
+      <UniqueIdentifier>{c9347829-0f4e-49a3-b5dd-258c041612f4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

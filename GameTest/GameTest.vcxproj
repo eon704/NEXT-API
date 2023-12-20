@@ -184,6 +184,7 @@
     <ClInclude Include="App\SimpleSprite.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameUI.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteRenderer.h" />
@@ -201,6 +202,7 @@
     <ClCompile Include="App\SimpleSprite.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="GameUI.cpp" />
     <ClCompile Include="Scene.cpp" />

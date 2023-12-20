@@ -51,8 +51,3 @@ void TestController::Update(float deltaTime)
 
 	this->spriteRenderer->sprite->SetPosition(x, y);
 }
-
-void TestController::Destroy()
-{
-	delete this->spriteRenderer;
-}
